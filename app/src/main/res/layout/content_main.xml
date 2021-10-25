@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            >
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_scrollFlags="scroll|enterAlways"
+                android:minHeight="200dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src = "@drawable/menu_five"
+                    android:scaleType="centerCrop"
+                    android:padding="0dp"
+                    android:id="@+id/sing_picture"
+                    />
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/title_stroename"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:titleTextColor="#A29D9D"
+                    app:title=""
+                    >
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+        <!--<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="sdfasf"/>
+        </LinearLayout>-->
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/main.scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:scrollbars="none"
+        android:descendantFocusability="blocksDescendants"
+        >
+        <!--android:fillViewport="true"-->
+
+
+        <!--<android.support.v7.widget.RecyclerView
+            android:id="@+id/main.scrollview.recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            >
+
+            <Button
+                android:id="@+id/int_btn"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_button1"
+                android:text="소개"
+                android:textSize="20dp" />
+            <Button
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:text="방 정보"
+                android:background="@drawable/button_button1"
+                android:layout_toRightOf="@+id/int_btn"
+                android:textSize="20dp"
+                android:id="@+id/imp_btn"
+                />
+            <Button
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:text="리뷰"
+                android:background="@drawable/button_button1"
+                android:layout_toRightOf="@id/imp_btn"
+                    android:textSize="20dp"
+                    android:id="@+id/see_btn" />
+            <Button
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:text = "지도"
+                android:background="@drawable/button_button1"
+                android:layout_toRightOf="@id/see_btn"
+                    android:textSize="20dp"
+                    android:id="@+id/map_btn"
+            />
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/int_btn"
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="6"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:id="@+id/listView_main_list" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/see_btn">
+                <RelativeLayout
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:id="@+id/mapGo"></RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

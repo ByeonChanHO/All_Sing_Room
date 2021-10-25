@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/seq1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="가게소개"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:padding="5dp" />
+    <TextView
+        android:id="@+id/textView_list_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seq1"
+        android:layout_margin="5dp"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/seq2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_list_intro"
+        android:text="안내 및 혜택"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/textView_list_advan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seq2"
+        android:layout_margin="5dp"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/seq3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="영업정보"
+        android:layout_below="@+id/textView_list_advan"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:padding="5dp" />
+    <TextView
+        android:id="@+id/seq11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seq3"
+        android:text="요금"
+        android:layout_margin="5dp"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/textView_list_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/seq11"
+        android:layout_below="@id/seq3"
+        android:padding="5dp"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/seq4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seq11"
+        android:text="운영시간"
+        android:layout_margin="5dp"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/textView_list_opentime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/seq4"
+        android:layout_below="@id/seq11"
+        android:layout_margin="5dp"
+
+        android:padding="5dp" />
+
+
+    <TextView
+        android:id="@+id/seq5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_list_opentime"
+        android:text="휴무일"
+        android:layout_margin="5dp"
+        android:padding="5dp" />
+    <TextView
+        android:id="@+id/textView_list_holiday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/seq5"
+        android:layout_below="@id/textView_list_opentime"
+
+        android:layout_margin="5dp"
+        android:padding="5dp" />
+
+
+
+    <TextView
+        android:id="@+id/seq6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전화번호"
+        android:layout_below="@id/textView_list_holiday"
+        android:layout_margin="5dp"
+        android:padding="5dp" />
+    <TextView
+        android:id="@+id/textView_list_phonenum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_list_holiday"
+        android:layout_toRightOf="@id/seq6"
+        android:layout_margin="5dp"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="위치정보"
+        android:id="@+id/seq7"
+        android:layout_below="@id/textView_list_phonenum"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:padding="5dp" />
+    <TextView
+        android:id="@+id/textView_list_whereroom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seq7"
+        android:layout_margin="5dp"
+        android:padding="5dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="사업자정보"
+        android:id="@+id/seq8"
+        android:layout_below="@+id/textView_list_whereroom"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:padding="5dp" />
+    <TextView
+        android:id="@+id/seq9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below= "@id/seq8"
+        android:text="사업자주소"
+        android:layout_margin="5dp"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/textView_list_comadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below= "@id/seq8"
+        android:layout_toRightOf= "@id/seq9"
+        android:layout_margin="5dp"
+        android:padding="5dp" />
+    <TextView
+        android:id="@+id/seq10"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/textView_list_comadd"
+        android:layout_height="wrap_content"
+        android:text="사업자등록번호"
+        android:layout_margin="5dp"
+        android:padding="5dp" />
+    <TextView
+        android:id="@+id/textView_list_comnum"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/textView_list_comadd"
+        android:layout_toRightOf="@+id/seq10"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp" />
+
+</RelativeLayout>

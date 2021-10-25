@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".ReparePage"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/real"
+        >
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/repare_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:title="모두의 노래방"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="90dp"
+        android:background="#00ff0000"
+        android:text="사진을 교체하시려면 눌러주세요"
+        android:textStyle="bold"
+        android:textColor="#009688"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:id="@+id/repare_picture"
+
+        />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/picture"
+            android:layout_marginTop="90dp"
+            android:src="@drawable/menu_five"
+            />
+        <TextView
+            android:id="@+id/Rseq0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="가게 이름"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:layout_below="@+id/picture"
+
+            />
+        <EditText
+            android:id="@+id/store_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_button1"
+            android:layout_below="@+id/picture"
+            android:layout_toRightOf="@+id/Rseq0"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            />
+
+
+        <TextView
+            android:id="@+id/Rseq1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="가게소개"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_below="@+id/store_text"/>
+        <EditText
+            android:id="@+id/RtextView_list_intro"
+            android:layout_width='match_parent'
+            android:layout_height="100dp"
+            android:layout_below="@+id/Rseq1"
+            android:background="@drawable/button_button1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:scrollbars="vertical"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/Rseq2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RtextView_list_intro"
+            android:text="안내 및 혜택"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/RtextView_list_advan"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/Rseq2"
+            android:background="@drawable/button_button1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:scrollbars="vertical"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/Rseq3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="영업정보"
+            android:layout_below="@+id/RtextView_list_advan"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:padding="5dp" />
+        <TextView
+            android:id="@+id/Rseq11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Rseq3"
+            android:text="요금"
+            android:layout_margin="5dp"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/RtextView_list_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/Rseq11"
+            android:layout_below="@id/Rseq3"
+            android:padding="5dp"
+            android:scrollbars="horizontal"
+            android:background="@drawable/button_button1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:id="@+id/Rseq4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Rseq11"
+            android:text="운영시간"
+            android:layout_margin="5dp"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/RtextView_list_opentime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/Rseq4"
+            android:layout_below="@id/Rseq11"
+            android:background="@drawable/button_button1"
+            android:scrollbars="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:padding="5dp" />
+
+
+        <TextView
+            android:id="@+id/Rseq5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RtextView_list_opentime"
+            android:text="휴무일"
+            android:layout_margin="5dp"
+            android:padding="5dp" />
+        <EditText
+            android:id="@+id/RtextView_list_holiday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/Rseq5"
+            android:layout_below="@id/RtextView_list_opentime"
+            android:scrollbars="horizontal"
+            android:background="@drawable/button_button1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="5dp" />
+
+
+
+        <TextView
+            android:id="@+id/Rseq6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전화번호"
+            android:layout_below="@id/RtextView_list_holiday"
+            android:layout_margin="5dp"
+            android:padding="5dp" />
+        <EditText
+            android:id="@+id/RtextView_list_phonenum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal"
+            android:layout_below="@id/RtextView_list_holiday"
+            android:layout_toRightOf="@id/Rseq6"
+            android:background="@drawable/button_button1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="5dp" />
+        <TextView
+            android:id="@+id/seq12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="운영방식(중복가능)"
+            android:layout_below="@+id/RtextView_list_phonenum"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            />
+        <CheckBox
+            android:id="@+id/time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시간제 노래방"
+            android:layout_below="@+id/RtextView_list_phonenum"
+            android:layout_toRightOf="@+id/coin_text"
+            />
+        <CheckBox
+            android:id="@+id/coin_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="코인제 노래방"
+            android:layout_below="@+id/RtextView_list_phonenum"
+            android:layout_toRightOf="@id/seq12"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="위치정보"
+            android:id="@+id/Rseq7"
+            android:layout_below="@id/coin_text"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:padding="5dp" />
+        <EditText
+            android:id="@+id/RtextView_list_whereroom"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/Rseq7"
+            android:scrollbars="vertical"
+            android:background="@drawable/button_button1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="5dp" />
+        <TextView
+            android:id="@+id/Rlati"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RtextView_list_whereroom"
+            android:text="위도"
+            android:layout_margin="5dp"
+            android:padding="5dp" />
+        <EditText
+            android:id="@+id/RtextView_list_latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/Rlati"
+            android:layout_below="@id/RtextView_list_whereroom"
+            android:scrollbars="horizontal"
+            android:background="@drawable/button_button1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="5dp" />
+
+
+
+        <TextView
+            android:id="@+id/Rlong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="경도"
+            android:layout_below="@id/RtextView_list_latitude"
+            android:layout_margin="5dp"
+            android:padding="5dp" />
+        <EditText
+            android:id="@+id/RtextView_list_longitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal"
+            android:layout_below="@id/RtextView_list_latitude"
+            android:layout_toRightOf="@id/Rlong"
+            android:background="@drawable/button_button1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="5dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사업자정보"
+            android:id="@+id/Rseq8"
+            android:layout_below="@+id/RtextView_list_longitude"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:padding="5dp" />
+        <TextView
+            android:id="@+id/Rseq9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below= "@id/Rseq8"
+            android:scrollbars="horizontal"
+            android:text="사업자주소"
+            android:layout_margin="5dp"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/RtextView_list_comadd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal"
+            android:layout_below= "@id/Rseq8"
+            android:layout_toRightOf= "@id/Rseq9"
+            android:background="@drawable/button_button1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="5dp" />
+        <TextView
+            android:id="@+id/Rseq10"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/RtextView_list_comadd"
+            android:layout_height="wrap_content"
+            android:text="사업자등록번호"
+            android:layout_margin="5dp"
+            android:padding="5dp" />
+        <EditText
+            android:id="@+id/RtextView_list_comnum"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/RtextView_list_comadd"
+            android:layout_toRightOf="@+id/Rseq10"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_button1"
+            android:layout_marginTop="5dp"
+            android:scrollbars="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="5dp" />
+
+
+        <Button
+            android:id="@+id/save_repare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RtextView_list_comnum"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="저장"
+            />
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
